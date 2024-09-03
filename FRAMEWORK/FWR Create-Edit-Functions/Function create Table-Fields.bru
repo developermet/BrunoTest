@@ -1,0 +1,280 @@
+meta {
+  name: Function create Table-Fields
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:3000/fwr/createTable&Fields
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZGZlNDA1ZTVmNjY1NzRjYTE5Yjg1ZDMxZGEwZWE3OjVmZjUyZDFmNGM1MGE1NGVhNDUyMWU4NzgxZjgxYmU2MmQ2ZTVlZDg5OWI3OTllOTQ4ZDM1ZmUzYzE0MGRhMDk0YTYyYWNmZTEwNzMzM2M5ZDE4MWM4NzFhNTM1Mzk1MDEyZjRkZSIsImlhdCI6MTY2MjY1NDM1OCwiZXhwIjoxNjYyNzI2MzU4fQ.TX9mH8aUpCZJQNGG7nVBWlhqU_2w4B3X-4VAvONizxZpiSibEalfGRsiSUaCf7l4hxvRkFgXyL1kTxGAC3UgI5T4PTl5QmXyA_P3P5CgndnhhvCkB1sll-ZDqcqNXXjOd_Ln7L2M-pA1nUiFbVSMxjwSQRxOPrGZOtqNAeKmjUdwA10oEfRMZJExDjYrRln6hWlgfOKz2fmocRQ4OOiOpD7opQfXgtTFwiI5l409_8H14Y9u8_Wu4qveej1GSZoIoXmG5VD8YXsFyhBmIZb2OYDZGAc4bCRcFOG7yWrGRLRzfrhglOgNdxoVJQx7LxPyXONNgQm5vbs5CgIeLn2VRFanbpq1olkeW8iV1H5cj6xO7yBCVA79Eo468to-98aivZ4z8uJmBHLAh481eiNEM2y60Xg37W214xWvb6j73K25yP5bcovhn4VzyfwhtljDrLlQ0n5J1j4q5zMPJ12C6gs_EshghhAsfvNO4TfF5QDcRyxZoeOEqMYvTeH8KNrR3MHmboSinSgIEQ5W9l9Qg3KQjBMqtMDdTt5yssmqcA1GrwmrYlsdjvSuziDbBPZrBwaML2Cg6UyW3TGEnMIBYMYY6pMpo4DmaQ2VpG7Unc_NGPXeQK3TH3woaNfcyt54edtI1kYM-WhkdfrtUj-L4TeZUrYYckQCI2LbZlB5Ztk
+}
+
+body:json {
+  {
+    "SCHEMA": "FRAMEWORK",
+    "NAME": "TABLES",
+    "CREATED_BY": "2",
+    "FORM_TITLE_ID": "",
+    "FORM_DESCRIPTION_ID": "",
+    "TABLE": {
+      "SCHEMA": "FRAMEWORK",
+      "TABL_NAME": "TABLES",
+      "LABEL": {
+        "ID": "12",
+        "LABEL_NAME": "TABLAS",
+        "EN": "TABLES",
+        "LABEL": "TABLAS",
+        "LANGUAGE_CODE": "ES",
+        "CREATED_BY": "2"
+      }
+    },
+    "FIELDS": [
+      {
+        "NAME": "ID",
+        "LABEL": {
+          "ID": "46",
+          "LABEL_NAME": "ID",
+          "EN": "ID",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": true,
+        "IS_REQUIRED": false,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "1",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": null,
+        "references_fields": null,
+        "references_field": null
+      },
+      {
+        "NAME": "SCHEMA",
+        "LABEL": {
+          "ID": "1",
+          "LABEL_NAME": "ESTRUCTURA",
+          "EN": "FRAMEWORK",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": true,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "2",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": null,
+        "references_fields": null,
+        "references_field": null
+      },
+      {
+        "NAME": "NAME",
+        "LABEL": {
+          "ID": "39",
+          "LABEL_NAME": "NOMBRE",
+          "EN": "NAME",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": true,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "2",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": null,
+        "references_fields": null,
+        "references_field": null
+      },
+      {
+        "NAME": "FORM_TITLE_ID",
+        "LABEL": {
+          "ID": "",
+          "LABEL_NAME": "TITULO",
+          "EN": "TITLE",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": true,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "8",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": "3",
+        "FOREIGN_PK_FIELD_ID": "16",
+        "FOREIGN_LABEL_FIELD_ID": "17",
+        "references_table": "3",
+        "references_schema": "ADMINISTRATIVE",
+        "references_fields": {
+          "16": "ID",
+          "17": "LABEL",
+          "18": "LANGUAGE_CODE",
+          "19": "CREATED_AT",
+          "20": "CREATED_BY",
+          "21": "UPDATED_AT",
+          "22": "UPDATED_BY"
+        },
+        "references_field": "16"
+      },
+      {
+        "NAME": "FORM_DESCRIPTION_ID",
+        "LABEL": {
+          "ID": "48",
+          "LABEL_NAME": "DESCRIPCIÓN",
+          "EN": "DESCRIPTION",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": true,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "8",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": "3",
+        "FOREIGN_PK_FIELD_ID": "16",
+        "FOREIGN_LABEL_FIELD_ID": "17",
+        "references_table": "3",
+        "references_schema": "ADMINISTRATIVE",
+        "references_fields": {
+          "16": "ID",
+          "17": "LABEL",
+          "18": "LANGUAGE_CODE",
+          "19": "CREATED_AT",
+          "20": "CREATED_BY",
+          "21": "UPDATED_AT",
+          "22": "UPDATED_BY"
+        },
+        "references_field": "16"
+      },
+      {
+        "NAME": "CREATED_AT",
+        "LABEL": {
+          "ID": "49",
+          "LABEL_NAME": "CREADO EL",
+          "EN": "CREATED AT",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": false,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "6",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": null,
+        "references_fields": null,
+        "references_field": null
+      },
+      {
+        "NAME": "CREATED_BY",
+        "LABEL": {
+          "ID": "50",
+          "LABEL_NAME": "CREADO POR",
+          "EN": "CREATED BY",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": false,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "4",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": "ADMINISTRATIVE",
+        "references_fields": {},
+        "references_field": null
+      },
+      {
+        "NAME": "UPDATED_AT",
+        "LABEL": {
+          "ID": "51",
+          "LABEL_NAME": "ACTUALIZADO EL",
+          "EN": "UPDATED AT",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": false,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "6",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": null,
+        "references_fields": null,
+        "references_field": null
+      },
+      {
+        "NAME": "UPDATED_BY",
+        "LABEL": {
+          "ID": "52",
+          "LABEL_NAME": "ACTUALIZADO POR",
+          "EN": "UPDATED BY",
+          "DIC_FILTER": ""
+        },
+        "IS_PK": false,
+        "IS_REQUIRED": false,
+        "IS_READONLY": false,
+        "IS_DISABLED": false,
+        "DEFAULT_VALUE": null,
+        "CLASS": true,
+        "FORM_ORDER": 0,
+        "COMPONENT_ID": "4",
+        "LABEL_HINT_ID": null,
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_LABEL_FIELD_ID": null,
+        "references_table": null,
+        "references_schema": "ADMINISTRATIVE",
+        "references_fields": {},
+        "references_field": null
+      }
+    ]
+  } 
+}

@@ -1,0 +1,57 @@
+meta {
+  name: Create User SIU
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:4003/PERSON/SIU
+  body: json
+  auth: bearer
+}
+
+params:query {
+  ~LABEL: PRUEBA
+}
+
+headers {
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+  Accept-Language: es-419,es;q=0.9
+  Cache-Control: max-age=0
+  Connection: keep-alive
+  Cookie: PHPSESSID=3vu5t1dir1tjbr4hs41k37i537
+  If-None-Match: W/"34-A0na0ZoDK8pIbckWqhysYkYbqUY"
+  Sec-Fetch-Dest: document
+  Sec-Fetch-Mode: navigate
+  Sec-Fetch-Site: none
+  Sec-Fetch-User: ?1
+  Upgrade-Insecure-Requests: 1
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
+  sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"
+  sec-ch-ua-mobile: ?0
+  sec-ch-ua-platform: "Windows"
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwZjZhZWI4NzU4NzYxNDYxZjllY2NhMTFjZmRlMDhhOjQ4MGZjZDI1M2E0M2EyYmE2MGZkOTNiY2RiMDdmZWU3MTM4MzgyZWZkZWMwNzVhZDhhYjVhMzYzODdkMmFlMWUxNTQyOTc4YTYwZTE3ODg4MmQyZjI3NmEzZmFlZTcyMzVkMmU2NiIsImlhdCI6MTY2OTEyODg5MSwiZXhwIjoxNjY5MjAwODkxfQ.EEzeBJC-4EoUrZwbffdNYMflKWvXD2G0EhPXaY0KEBgL6Fmc5BFtK4Un4P4Jmeetxo5Z92QtPaVbz5cgpN8UNOll5rGyJXcVtSKRTU6W8HCdaHYeTJxWwi6n18mMOarixXCQIodFf7fIoMcM2SYvsRQE1PAVLO8GOVDRYI35nnPBEiw493Gpe7xdWNLTkEOWwpbFLtFaq1ziGlG8U7zeBhEq1bnn2dfdtUR41q2QBKclwlAfk3eKFCL7deWEESYOS-mOFJ5qJrwPvqAOxNv5H4zVF_w78eXN6Whsc3vgnJ3bJI1OukDhi8iSY2elNuqCsL5JBv58jNt8o65LBTrKRtEUN-cBILzlu1JuYJu8v4Gizct2FM43-TcBOvPnubpETyLu1a0wKt6yEtfiCSyDNxAFQna5Zoc3hxbWbI4t12OKUvhNWX-z6znXGZa7HvyUfn8ztCYfCWq7UXR4ZX8biThvBfU6NvS2P2PUjN9pJKyt0s52zM8hAWb-swukfAD8EhEBDGYx7doFx4ajkO2ENU9IOM41CLDud7olW1Na2ClCX41fh-rZ0a-q2u4D7HmiZnwavmlke
+}
+
+body:json {
+  {       
+        "PROFILE_ID":5,
+        "CLIENT_ID":54 ,
+        "NAMES": "Jorge " ,
+        "SURNAMES": "Martinez",
+        "PHONE_NUMBER":"3215897143",
+        "CONTACT_EMAIL":"jorge_dev1@metgroupsas.com",
+        "DATE_OF_BIRTH":"2024-02-07 05:00:00+00",
+        "ID_NUMBER": "1088222333666",
+        "IDENTIFICATION_TYPE_ID" : 2,
+        "USERNAME":"jorelimartinez",
+        "PASSWORD":"pass",
+        "SECOND_AUTH_MODE":"",
+        "IS_ACTIVE":1,
+        "PROFILE_PICTURE":"",
+        "CREATED_BY":2
+      }
+}

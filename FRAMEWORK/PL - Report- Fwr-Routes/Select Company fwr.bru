@@ -1,0 +1,22 @@
+meta {
+  name: Select Company fwr
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/fwr/fields
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI4Zjg3YjhlNTA5YmIxYjVjNzk0ZDBhNzAyNmIxNGUwOmRiMzZmODdmZGIwZTU3OGJmNGEzMzIzMGQxZGI2YjE4MzEzNThiMmNiMzFkNTlkY2M2ZTQ4ZTJlMzUxYzdlMjAwODcyYjZjNzFiYWNkMjU5OWQ4NDc1MjM2YWUzOWZlMTYwODE0NCIsImlhdCI6MTY2Njk3Mzg0MywiZXhwIjoxNjY3MDQ1ODQzfQ.pGdBivvbAEAXKyYbXOjuTsSsIfL7xr3lMBHzgRya4u_Uln-zdxTWxVZoqxQN9e0BSbcoraVJMmaiWFm3P67mAAJA31wya7fBuPk6_m8FEla_je6QS6CcfJ760yBMjkHg6TnQhoRN1o6fBHYwvyuVpz9T1_tUTj6BURayR7p4SpeHMqrq44Hgl3UdfKWrRgDjB1OSNwxye6oWk33i_UhsDnv6yhu3kWiBbldoBAU67UpwZgs0I3eBKNNy0ww0wnywLk6YGwb32rrUDhhcKkSpDkuPLo9BjwD8nSVMIDMHu4zN2nEzNaTaRhM2Cw_I7SIKDHnlYKiXXdoR_dnbhM4Nz2CUQxs66FP7FRgQa9c1veffjWOhMQqtP7PotttTTkvI6gyDQJ48MY_0UjaRlOw5b381z0fzLe-TDEEnpTjeiJomYVik0AibAOH29zGrULexEOUA0wd73gNnUDl2iz5ke_S64rWhulkptdk9-oUcwSDxXATTggCIeN1Wf3DFx0fpZ7FbhKniH4nGwkBtSXWGiISJGbtDn3aN3Sr9j35VEZVw9FdYTzoYITuuMRV0SEOzHozZL3X2w78LeMONwppxffA0JHeXVDPlcHWGQ2Rw6PaGyHJ1Fth5Uh9G14bXH0tS910RkbX-6SariQiTYXLdpOII1naSNPHa1vhY-Ieddlg
+}
+
+body:json {
+  {
+      "SCHEMA": "VOA",
+      "TABLE": "FRAMES"
+  }
+}

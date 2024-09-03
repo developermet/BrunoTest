@@ -1,0 +1,38 @@
+meta {
+  name: RECEIVER FRAMES-API-PEGASUS
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://192.168.1.2:4002/receiverFrames
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4MjRlMmVkMjM3MTM1OTlhMGY5NDI2NDU0MThlZDljOjVjYTJlNGZlZmExZTA5N2NjNjRkZWZkYzI0OTE1ZGZhY2E2MWM0ZjEwMzJhMzcwYmYwYWE2ZGZlODkwM2I1MGE1ZjYxMTBjMjY5Zjk0NjUwZmEyYTNhMTVjNTM4MTgxNGY4Yzk5ZSIsImlhdCI6MTY2ODE3MzU0OCwiZXhwIjoxNjY4MjQ1NTQ4fQ.GhmabUUiMi4r_7-2ogW8bmcmnBAeBHa8NoGxyNWnNJ_Vc9W0Rd0ZWBK1q601P6aF6dewiLjMm7xk5JFRQbw3Hh-idVKQnhhJrrR8iFlNmyET1cHhn95pSrxKEjrmWfj4bjHJupbSoKaB-zqq57aYKi4hCeYtCCwvVScbc1XNERgUP_KwSx-3ZrtpzdOah3L_KWQUv4kGFDJWjJ0CI1kk5jKUZtjFwsHdqNTfCKJczKArdzVqsY_JbRhATqX8NU12MWK9UBM5MzqgrQ5c0E5jNnvcgygFUG-IUGEPYtNHA0tNMwTFjBy2Ehy0geVWykYOjZ-DVTHgvXZirUr_bjZi3-pRVjkR073DMHtyvhSoAFHqE6cV-iPfYm8u1G7K1UVVrPpO1d4Z_rF_00QwKUYBmdUCBKAYzxujbiWK0VXeTuhX8KFAT9AIwzmMHjEfidm3TxmFcUrXe7lJmnWbUpilcAtGUMX8RNSAGV0jJjMPDY9ltz4VYCKxvbUDDjYMucyLD9wDOmwfggIPYVoTFXIL1ahqnvsstcc_8jCFPSh20rXWF8f4NzwliNtJQdqZbaejwKvwKWjXcI5D1jM3ZNTHn5rUdEXnUWg1x6QhFgU6Wn5J-3hs-U66QYlHD86qX8FiBqn0yw5rdPtjcYsmwwlMR20Hg3KuyfeD6oz39sK_s-0
+}
+
+body:json {
+  {"CategoryFrame":1,
+  "NameFrame":"T20",
+  "CodeFrame":135,
+  "id":139,
+  "FrameVersion":"E.2.0.0",
+  "ReadingDateHour":1667586917,
+  "Latitude":4.802488,
+  "Longitude":-75.829918,
+  "Altitude":1228.8,
+  "Imei":865167062430864,
+  "VehicleIgnitionStatus":true,
+  "PositionOfDoors":2,
+  "IlluminationBrightnessPercent":80,
+  "FrontOperatorWiperSwitch":1,
+  "MetAirConditioningState":1,
+  "MetInternalLightingState":1,
+  "MetExternalLEDState":1,
+  "MetWindshieldDefrosterState":1,
+  "VehicleSpeed":0.20000016000000004,
+  "SeatBeltSwitch":1}
+}

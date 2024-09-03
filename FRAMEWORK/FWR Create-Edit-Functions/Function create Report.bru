@@ -1,0 +1,156 @@
+meta {
+  name: Function create Report
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/fwr/createreport
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZGZlNDA1ZTVmNjY1NzRjYTE5Yjg1ZDMxZGEwZWE3OjVmZjUyZDFmNGM1MGE1NGVhNDUyMWU4NzgxZjgxYmU2MmQ2ZTVlZDg5OWI3OTllOTQ4ZDM1ZmUzYzE0MGRhMDk0YTYyYWNmZTEwNzMzM2M5ZDE4MWM4NzFhNTM1Mzk1MDEyZjRkZSIsImlhdCI6MTY2MjY1NDM1OCwiZXhwIjoxNjYyNzI2MzU4fQ.TX9mH8aUpCZJQNGG7nVBWlhqU_2w4B3X-4VAvONizxZpiSibEalfGRsiSUaCf7l4hxvRkFgXyL1kTxGAC3UgI5T4PTl5QmXyA_P3P5CgndnhhvCkB1sll-ZDqcqNXXjOd_Ln7L2M-pA1nUiFbVSMxjwSQRxOPrGZOtqNAeKmjUdwA10oEfRMZJExDjYrRln6hWlgfOKz2fmocRQ4OOiOpD7opQfXgtTFwiI5l409_8H14Y9u8_Wu4qveej1GSZoIoXmG5VD8YXsFyhBmIZb2OYDZGAc4bCRcFOG7yWrGRLRzfrhglOgNdxoVJQx7LxPyXONNgQm5vbs5CgIeLn2VRFanbpq1olkeW8iV1H5cj6xO7yBCVA79Eo468to-98aivZ4z8uJmBHLAh481eiNEM2y60Xg37W214xWvb6j73K25yP5bcovhn4VzyfwhtljDrLlQ0n5J1j4q5zMPJ12C6gs_EshghhAsfvNO4TfF5QDcRyxZoeOEqMYvTeH8KNrR3MHmboSinSgIEQ5W9l9Qg3KQjBMqtMDdTt5yssmqcA1GrwmrYlsdjvSuziDbBPZrBwaML2Cg6UyW3TGEnMIBYMYY6pMpo4DmaQ2VpG7Unc_NGPXeQK3TH3woaNfcyt54edtI1kYM-WhkdfrtUj-L4TeZUrYYckQCI2LbZlB5Ztk
+}
+
+body:json {
+                  {
+    "TYPE": "1",
+    "PAGE_SIZE": 10,
+    "SCRIPT": null,
+    "CREATED_BY": "2",
+    "TABLE_ID": "4",
+    "TITLE_LABEL_ID": {
+      "ID": "1",
+      "LABEL_NAME": "PRUEBA",
+      "TRANSLATION": "TABLES",
+      "DIC_FILTER": ""
+    },
+    "DESCRIPTION_LABEL_ID": {
+      "ID": "2",
+      "LABEL_NAME": "REPORTE PRUEBA DE TABLAS",
+      "TRANSLATION": "TABLES REPORT",
+      "DIC_FILTER": ""
+    },
+    "COLUMNS": [
+      {
+        "ORDER": 1,
+        "SHOW": true,
+        "DEFAULT_ORDER": "ASC",
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "46",
+        "FIELD_ID": "23",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 2,
+        "SHOW": true,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "56",
+        "FIELD_ID": "24",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 3,
+        "SHOW": true,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "39",
+        "FIELD_ID": "25",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 4,
+        "SHOW": true,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "12",
+        "FIELD_ID": "26",
+        "FOREIGN_TABLE_ID": "3",
+        "FOREIGN_PK_FIELD_ID": "16",
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 5,
+        "SHOW": true,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "48",
+        "FIELD_ID": "27",
+        "FOREIGN_TABLE_ID": "3",
+        "FOREIGN_PK_FIELD_ID": "16",
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 6,
+        "SHOW": true,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "49",
+        "FIELD_ID": "28",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 7,
+        "SHOW": true,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "50",
+        "FIELD_ID": "29",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 8,
+        "SHOW": false,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "51",
+        "FIELD_ID": "30",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      },
+      {
+        "ORDER": 9,
+        "SHOW": false,
+        "DEFAULT_ORDER": null,
+        "DEFAULT_CONDITION_TYPE": null,
+        "DEFAULT_CONDITION_VALUES": null,
+        "REPORT_ID": null,
+        "LABEL_ID": "52",
+        "FIELD_ID": "31",
+        "FOREIGN_TABLE_ID": null,
+        "FOREIGN_PK_FIELD_ID": null,
+        "FOREIGN_VALUE_FIELD_ID": null
+      }
+    ]
+  } 
+}

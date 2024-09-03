@@ -1,0 +1,28 @@
+meta {
+  name: test-PL_FUNCTION_OPERATION_DISPATC
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:4002/OPERATION_DISPATC_PL_FUNCTION_TEST
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0YTI2NzVlZDNiNGI3Yzc3OGVhMTgwMzgwMzQwNmEwOmVjZmI3MDcxMzVhNWY0MDNhNGE5ODNkMDY1NGQ3ZGVjYmJjOWExZjE3MDNmMGQ1NGVlYjAyOTcyNWY4OTY2Y2NkYmNkNTZmNjU3Nzg0ZjIxZWExN2Q0YTg2YmZmNWIzY2E5MTQ3NyIsImlhdCI6MTcyNDc4NjcyNiwiZXhwIjoxNzI0ODU4NzI2fQ.WMdhZlJ9CkdPbhupoPwss2Ft9c5jOlJHyZlH1egMOjms7pU-5fVK7T4xC-C1tjQy2vcPOAOZlN434y8pMiW1uyXNFzW6ltqh_znQXD3JrubnMF04ltYwXnZEcR9Plr_PyjouG3Q6YPALDvYgvTaY9c8nx_bcNa9LKI3Vbk-o6_nw6k_n_YmslUfZnyaCyQaGy6EINkHmkHNXLZA2kt9Ql-Ec4HC_sHlA4ZfEuZSiGEWI28zdd4aQhxhzg5kU0zyrJ-90sVU-7JG-V_AR6mwZjiqP5tojIb96a02Km_JVcsUcB0r-a2bckwWYurAspatDc_wzIac_BB7pxzAvgAjIj_oBl6SxFZgkCT--U9VVXxQbz74NqG-i2hM7jqAOlhIorqQ1gzl0ZB0eMa6xHFxo_FfoGI7MPw3pEcWf_CvvIcjAVZicgy99xWaALjo9bKVsjGkoVUiD9gN4nHJuBXtA8WJ44vGRklCEXVgzw6NFrB6Dg4xICiREFCjCanmp8ixQZh0IKOToqHSfKEf2rWbIeexdj3YcdIVgqxNAWjYQwYPfoy2yOG3Fdoas37A7feiLM3AWeWY-YYgNQSKvMxm-2f7CNLPth1gksxXi0wxkJlgWO8UcVMadtjSav_B_pTt8fdMuJSeW9yX1aQQhLl1VBS5HmX8ju1B9zIBMvK40FOY
+}
+
+body:json {
+  {
+      "COMPANY_ID": 11,
+      "DATE": "2024-03-21",
+      "ID": 0,
+      "CREATED_BY": 1
+  }
+}
+
+docs {
+  Ejecuta las funciones para la creación de operación y sus detalles, asignación de vehículo, conductor, creación de checklist.
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Tables-Fields-report created
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:3002/fwr/tablefieldsreport
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE2ZTllNWM0MjhhZjJmYjhkYWZmYzVhZGZjNDRhMTk2OmZjODBjMzg5NGMxMzA1OWQyZTUxMmU5MTlhNzhkMTRmNTE5MmJjMDY2OThlYTM5NWJiYTc3NWYxMTQ1MjEwMGRhYzVmZTg0NmI4ZmM2MmVjM2UwMzJkNjQ4NTEwNzk3NDU3N2M2NSIsImlhdCI6MTY2ODY5OTg1NSwiZXhwIjoxNjY4NzcxODU1fQ.qmqzcnpsWc7Ou_BWE6t2XekoCpfi_qBb17UYLK0dMwzKuhWU4y-1qr8143bxryx8HAjrI9Iho_Aaj2k7zROMyKLIwu3x6UOofUYqN0ZZc_WKc3c6EsWveEMZpPJSym1LZ6VK2Z_mADyM5ITFYJ_EdgLzakmtzwzVvHRenHIXFaVo6fbs3FAw_ZQWsyCCJ0G4LMNRFoLj_jAb54i4Sq-q71SaKCJsYErLZXw6_09eVdI-We4uc-40PggbL6jaoqKjlq9qPduhq63M_gYy1T0WvkhmINsblvjP--Rr3uRIQSuTXsdKmuvLAfVqJD2RnVLRJw_k4bHbgwVKYmTLdknbxGT1oS8_3mnr6MVnpfT9GvToiMbfuu9fm__cbCfq8xJi6lL700-3WndCLSi6o-5MpxCY5kIpmlMnLZReEcNIOuQTz8Hk04gpVtZsCW2fTuTwiFDLyQlAXCpA6HpTgVdy9Y8WBo_PyJ_x4YG6crU--49JGYmjhnbXa1-hpieaTV4_4eQzTwV8KJBol0Sf07748w30KEKQQHxUeuAusnJcrhj2vU0e8pYfhnBgU2eh-3oluwdjJRHoDUFrYv44vhjb9GLXDdYbsz7OMfZBkJLpgt4eqYoiE5_MEnLh3QnOeBydjNqxO8kYSidKraztVGvxum4GoBg2-0T9L7aAYq2w5aA
+}
+
+body:json {
+  {
+      "USER_ID": "2",
+      "SCHEMA": "VOA",
+      "TABLE_NAME": "FRAME_TYPES",
+      "LANGUAGE": "EN"
+  }
+}

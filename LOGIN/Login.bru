@@ -1,0 +1,39 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:4003/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "user": "desarrollador.its1@metgroupsas.com", //pay
+    "pass": "TWV0MTIz1234"
+  }
+}
+
+tests {
+  test(`should be able to login - Status: ${res.getStatus()}`, function() {
+    const data = res.getBody();
+    const statusCode = res.getStatus();
+  
+    switch (statusCode) {
+      case 200:
+        expect(data.accessToken).to.be.a('string');
+        expect(data.user).to.be.a('string');
+        expect(data.auth).to.be.a('boolean');
+        expect(data.TFac).to.be.a('number');
+        break;
+      
+      default:
+        throw new Error(`Unexpected status code: ${statusCode}`);
+    }
+  });
+  
+  
+}

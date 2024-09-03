@@ -1,0 +1,26 @@
+meta {
+  name: GeneralReport not condition- not order
+  type: http
+  seq: 11
+}
+
+post {
+  url: http://localhost:3000/fwr/general-report
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViOTRkZTFmYmEzMTc5ZmRmMzJkN2EyNDdmMGExOWY1OjRlMzdlNjMzYzlhMmJiZTQzYWZhY2EwZjA1MjlkZDNiY2E5M2YwZjI2NWM2MjM3YzliNjgyZGI4MjM2MzMyZmEwZTA0ODBlZGFiNzQ5MGZjNTlmNjA4M2EwZDgwNmNmZWRlZWRkMiIsImlhdCI6MTY3MTgwNDMxMiwiZXhwIjoxNjcxODc2MzEyfQ.aUEOw2t9Od-4iljJ87qqSt_NALY4s2mPrFKbHfpKbhtc8pnTIW2MsdXPOToN6V1AO26SlJHk2-Zx88BPx6KtTXOYdjMwJO1J3q_AsOUu8FhNWhvDJ4a51oCryNjp-twKSew84kfKlK1AUXvR2YNMGh_6KVqQIkmyfsnsVdROMgi6amLi-QsLpVqRpcuQNMGI-bOPhLmKcvbZG0C-VFCYHCTHnCb_CSzXAA7klZbR6EZZc2Oyg4bz77QfNgxbDHQFmhBE2eh2UELBRdyJRHnF-mr3Ifr3zONUh6GH5K74S3CaUafdkhzMnksU-i8FzRISkrYccqVAhkXvIw39oh7P66CyiOg4WgOrIhVDHt-97Z8HISuweTbcyJ6bDkXjnQ4LKWARVWW5j42ejBl2flCYqQS-oG79jbD7kVLqxvRHsgeFtPJax8cyN_zYFwMK8rNoEtUyGoAb7pffxiBW5WWDdijg560M5huOvkN2ykDUGzf5CjHtTCE4HE7WYtaYB3SA-tk7ysf6AUslM2aUHHB0MA7RcR9MKwOQQbto3nnMl7bRDjCMIg-V9-UFJOUsrAGouAwyLMQC6kjsO6L8P-6xDQmDYHyn0J4hAwQSsrB9oG9JUJabUcLTWCrSyDdzAWHRYQekVRU_OZh4lG_b_HVqWm1vvFOrRmuqS9pa35uLoqM
+}
+
+body:json {
+  {
+      "USER_ID": "2",
+      "REPO_ID": "19",
+      "PAGE_SIZE": "0",
+      "PAGE": "1",
+      "ORDER_BY": {},
+      "LANGUAGE": "ES"
+  }
+}

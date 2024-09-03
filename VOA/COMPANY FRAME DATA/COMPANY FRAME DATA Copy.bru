@@ -1,0 +1,66 @@
+meta {
+  name: COMPANY FRAME DATA Copy
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:4002/FRAMEPOSITIONBYVEHICLESID_T10
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0YTI2NzVlZDNiNGI3Yzc3OGVhMTgwMzgwMzQwNmEwOmVjZmI3MDcxMzVhNWY0MDNhNGE5ODNkMDY1NGQ3ZGVjYmJjOWExZjE3MDNmMGQ1NGVlYjAyOTcyNWY4OTY2Y2NkYmNkNTZmNjU3Nzg0ZjIxZWExN2Q0YTg2YmZmNWIzY2E5MTQ3NyIsImlhdCI6MTcyNDc4NjcyNiwiZXhwIjoxNzI0ODU4NzI2fQ.WMdhZlJ9CkdPbhupoPwss2Ft9c5jOlJHyZlH1egMOjms7pU-5fVK7T4xC-C1tjQy2vcPOAOZlN434y8pMiW1uyXNFzW6ltqh_znQXD3JrubnMF04ltYwXnZEcR9Plr_PyjouG3Q6YPALDvYgvTaY9c8nx_bcNa9LKI3Vbk-o6_nw6k_n_YmslUfZnyaCyQaGy6EINkHmkHNXLZA2kt9Ql-Ec4HC_sHlA4ZfEuZSiGEWI28zdd4aQhxhzg5kU0zyrJ-90sVU-7JG-V_AR6mwZjiqP5tojIb96a02Km_JVcsUcB0r-a2bckwWYurAspatDc_wzIac_BB7pxzAvgAjIj_oBl6SxFZgkCT--U9VVXxQbz74NqG-i2hM7jqAOlhIorqQ1gzl0ZB0eMa6xHFxo_FfoGI7MPw3pEcWf_CvvIcjAVZicgy99xWaALjo9bKVsjGkoVUiD9gN4nHJuBXtA8WJ44vGRklCEXVgzw6NFrB6Dg4xICiREFCjCanmp8ixQZh0IKOToqHSfKEf2rWbIeexdj3YcdIVgqxNAWjYQwYPfoy2yOG3Fdoas37A7feiLM3AWeWY-YYgNQSKvMxm-2f7CNLPth1gksxXi0wxkJlgWO8UcVMadtjSav_B_pTt8fdMuJSeW9yX1aQQhLl1VBS5HmX8ju1B9zIBMvK40FOY
+}
+
+body:json {
+  
+  {
+      "VEHICLES": [
+          "61",
+          "26",
+          "27",
+          "25",
+          "29",
+          "28",
+          "30",
+          "32",
+          "31",
+          "37",
+          "34",
+          "36",
+          "54",
+          "33",
+          "39",
+          "38",
+          "35",
+          "53",
+          "55",
+          "56",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "52",
+          "24",
+          "62",
+          "63",
+          "64",
+          "65",
+          "66",
+          "67"
+      ],
+      "COMPANY": "3",
+      "TYPE": "T30"
+  }
+  
+}

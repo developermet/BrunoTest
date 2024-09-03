@@ -1,0 +1,18 @@
+meta {
+  name: Login Mobile Pay
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://apipayqa.metgroupsas.com/auth/LOGIN/MOBILE
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "user": "agustin.salazar", //pay
+      "pass": "TWV0MTIz"
+  }
+}

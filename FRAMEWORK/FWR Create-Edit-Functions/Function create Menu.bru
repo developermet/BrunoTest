@@ -1,0 +1,52 @@
+meta {
+  name: Function create Menu
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3000/fwr/createmenu
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc0ZGZlNDA1ZTVmNjY1NzRjYTE5Yjg1ZDMxZGEwZWE3OjVmZjUyZDFmNGM1MGE1NGVhNDUyMWU4NzgxZjgxYmU2MmQ2ZTVlZDg5OWI3OTllOTQ4ZDM1ZmUzYzE0MGRhMDk0YTYyYWNmZTEwNzMzM2M5ZDE4MWM4NzFhNTM1Mzk1MDEyZjRkZSIsImlhdCI6MTY2MjY1NDM1OCwiZXhwIjoxNjYyNzI2MzU4fQ.TX9mH8aUpCZJQNGG7nVBWlhqU_2w4B3X-4VAvONizxZpiSibEalfGRsiSUaCf7l4hxvRkFgXyL1kTxGAC3UgI5T4PTl5QmXyA_P3P5CgndnhhvCkB1sll-ZDqcqNXXjOd_Ln7L2M-pA1nUiFbVSMxjwSQRxOPrGZOtqNAeKmjUdwA10oEfRMZJExDjYrRln6hWlgfOKz2fmocRQ4OOiOpD7opQfXgtTFwiI5l409_8H14Y9u8_Wu4qveej1GSZoIoXmG5VD8YXsFyhBmIZb2OYDZGAc4bCRcFOG7yWrGRLRzfrhglOgNdxoVJQx7LxPyXONNgQm5vbs5CgIeLn2VRFanbpq1olkeW8iV1H5cj6xO7yBCVA79Eo468to-98aivZ4z8uJmBHLAh481eiNEM2y60Xg37W214xWvb6j73K25yP5bcovhn4VzyfwhtljDrLlQ0n5J1j4q5zMPJ12C6gs_EshghhAsfvNO4TfF5QDcRyxZoeOEqMYvTeH8KNrR3MHmboSinSgIEQ5W9l9Qg3KQjBMqtMDdTt5yssmqcA1GrwmrYlsdjvSuziDbBPZrBwaML2Cg6UyW3TGEnMIBYMYY6pMpo4DmaQ2VpG7Unc_NGPXeQK3TH3woaNfcyt54edtI1kYM-WhkdfrtUj-L4TeZUrYYckQCI2LbZlB5Ztk
+}
+
+body:json {
+  {
+    "USER": "2",
+    "MODULE": "FW",
+    "MENU": [
+      {
+        "ICON": "../../",
+        "ROUTE": "jkhl",
+        "ORDER": 1,
+        "IS_ACTIVE": true,
+        "CREATED_BY": "2",
+        "MENU_PARENT_ID": "1",
+        "MENU_TYPE_ID": "1",
+        "LABEL": {
+          "ID": "",
+          "LABEL_NAME": "ESTRUCTURA",
+          "TRANSLATION": "FRAMEWORK"
+          }
+      },
+        {
+        "ICON": "../../",
+        "ROUTE": "jkhl",
+        "ORDER": 1,
+        "IS_ACTIVE": true,
+        "CREATED_BY": "2",
+        "MENU_PARENT_ID": "",
+        "MENU_TYPE_ID": "1",
+        "LABEL": {
+          "ID": "2",
+          "LABEL_NAME": "LENGUAJES",
+          "TRANSLATION": "LANGUAGES"
+        }
+      }
+    ]
+  }
+}
